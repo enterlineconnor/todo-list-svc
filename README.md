@@ -68,3 +68,16 @@ http://localhost:3000/
 http://127.0.0.1:3000/
 
 To terminate the program, click into the terminal that is running the service and use Ctrl+C. This will exit and make the program unreachable again
+
+---
+
+### Other Useful Resources:
+
+[git](https://git-scm.com/) - code version control software
+
+[Postman](https://www.postman.com/) - program to run RESTful request against endpoints
+
+["What is a REST API?"](https://www.youtube.com/watch?v=lsMQRaeKNDk&ab_channel=IBMTechnology)
+
+["Learn Go Programming"](https://www.youtube.com/watch?v=YS4e4q9oBaU&t=2863s&ab_channel=freeCodeCamp.org)
+
