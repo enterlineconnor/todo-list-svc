@@ -10,6 +10,7 @@ func main() {
     app := fiber.New()
 
 	routes.TodoNotes(app)
+	routes.ApiTestCalls(app)
 
     log.Fatal(app.Listen(":3000"))
 }

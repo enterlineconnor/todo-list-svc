@@ -1,9 +1,12 @@
+// Generic calls for TODO app
+
 package routes
 
 import (
 	"strings"
-	"fmt"
+
 	"github.com/gofiber/fiber/v2"
+	"fmt"
 )
 
 func TodoNotes(app *fiber.App) {
