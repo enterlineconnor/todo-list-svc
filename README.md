@@ -1,7 +1,7 @@
 ![coffee gopher](https://i.imgur.com/gkyVDhE.png)
 
 Note: This repo is part of a larger service. This is purely for Golang 
-practice purposes
+practice purposes.
 
 # Interactable TODO List
 
@@ -23,21 +23,21 @@ This project will likely be mostly [CRUD](https://www.freecodecamp.org/news/crud
 
 ### Model:
 
-In charge of the interaction between the data being brought in from the api and its interactions with the database (might just use [Postgres](https://www.postgresql.org/about/) or [MySQL](https://dev.mysql.com/doc/refman/8.0/en/what-is-mysql.html) for that?)
+In charge of the interaction between the data being brought in from the api and its interactions with the database.
 
-This will likely involve heavy use of database queries. These operations should be triggered almost soley by the API
+This will likely involve heavy use of database queries. These operations should be triggered almost soley by the API.
 
 ---
 
 ### Workflow/Layers (frontmost to backmost services):
 
-Frontend Application (Most likely [React.js](https://react.dev/blog/2023/03/16/introducing-react-dev))
+Frontend Application ([Next.js](https://nextjs.org/docs/getting-started)
 
 API (Will be working with [Go Fiber](https://docs.gofiber.io/))
 
 Model (Likely will be base [Go/Golang](https://go.dev/doc/))
 
-Database
+Database ([Postgres](https://www.postgresql.org/about/))
 
 ---
 
@@ -46,7 +46,7 @@ Database
 In the current state, since there is no database associated with this project yet
 the only thing to actually stand up is the API.
 
-To do this navigate to the api folder from the root of the project folder and use the go run command
+To do this navigate to the api folder from the root of the project folder and use the go run command.
 
 ```
 cd api
@@ -57,9 +57,11 @@ After doing so, your terminal should return a bound connection to the service an
 
 ![Fiber port bound](https://i.imgur.com/J29jJVB.png)
 
-Your code will always map to 127.0.0.1 (aka, localhost) but the port is determined by the Fiber main code in the api/main.go declaration
+Your code will always map to 127.0.0.1 (aka, localhost) but the port is determined by the Fiber main code in the api/main.go declaration.
 
-![main port mapping code](https://i.imgur.com/C2JZ2Hf.png)
+```
+log.Fatal(app.listen(":3000"))
+```
 
 Our program should now be accessible at the following URLS
 
@@ -67,7 +69,7 @@ http://localhost:3000/
 
 http://127.0.0.1:3000/
 
-To terminate the program, click into the terminal that is running the service and use Ctrl+C. This will exit and make the program unreachable again
+To terminate the program, click into the terminal that is running the service and use Ctrl+C. This will exit and make the program unreachable again.
 
 ---
 
