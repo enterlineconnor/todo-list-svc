@@ -37,7 +37,7 @@ API (Will be working with [Go Fiber](https://docs.gofiber.io/))
 
 Model (Likely will be base [Go/Golang](https://go.dev/doc/))
 
-Database ([Postgres](https://www.postgresql.org/about/))
+Database ([SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16))
 
 ---
 

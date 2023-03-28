@@ -1,15 +1,15 @@
 // Generic calls for TODO app
 
-package routes
+package routers
 
 import (
 	"strings"
-
+	"database/sql"
 	"github.com/gofiber/fiber/v2"
 	"fmt"
 )
 
-func TodoNotes(app *fiber.App) {
+func TodoNotes(app *fiber.App, db *sql.DB) {
     
 	// Return generic hello
 	app.Get("/", func (c *fiber.Ctx) error {
